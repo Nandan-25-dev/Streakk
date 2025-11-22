@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
 int conversion(int decnum){
     int ans=0,pow=1;
@@ -7,12 +8,13 @@ int conversion(int decnum){
         decnum= decnum/2;
         ans+=(rem*pow);
         pow+=10;
-    
     }
+    return ans;
 }
 int main()
 {
-   int decnum=50;
-   conversion(decnum);
+    int decnum=50;
+        cout<<conversion(decnum)<<endl;
+    getch();
    return 0; 
 }
